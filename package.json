@@ -1,0 +1,33 @@
+{
+  "name": "turkiye-identity-verification",
+  "version": "0.0.1",
+  "description": "Using the Nüfus ve Vatandaşlık İşleri (NVİ), it verifies the information on the Turkish Identity Card.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karaoglanhk/turkiye-identity-verification.git"
+  },
+  "keywords": [
+    "nvi",
+    "turkiye",
+    "identity",
+    "verification",
+    "verify",
+    "turkey",
+    "nufus",
+    "kimlik",
+    "dogrulama",
+    "yabanci",
+    "tckn",
+    "ykn"
+  ],
+  "author": "Hüseyin Karaoğlan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karaoglanhk/turkiye-identity-verification/issues"
+  },
+  "homepage": "https://github.com/karaoglanhk/turkiye-identity-verification#readme"
+}

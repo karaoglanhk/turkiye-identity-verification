@@ -33,7 +33,7 @@ const post = (props) => {
  * @param {string} name - etc. Hüseyin
  * @param {string} surname - etc. Karaoğlan
  * @param {string} birthYear - etc. 2000
- * @returns {boolean}
+ * @returns {Promise<boolean>}
  */
 const nativeCitizenVerify = async (identityNo, name, surname, birthYear) => {
     try {
@@ -77,7 +77,7 @@ const nativeCitizenVerify = async (identityNo, name, surname, birthYear) => {
  * @param {string} birthDate - etc. 10
  * @param {string} birthMonth - etc. 8
  * @param {string} birthYear - etc. 2000
- * @returns {boolean}
+ * @returns {Promise<boolean>}
  */
 const foreignCitizenVerify = async (identityNo, name, surname, birthDate, birthMonth, birthYear) => {
     try {

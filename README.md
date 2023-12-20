@@ -1,4 +1,4 @@
-## Installation
+# Installation
 
 This is a [Node.js](https://nodejs.org/en/) module available through the
 [npm registry](https://www.npmjs.com/).
@@ -19,13 +19,15 @@ $ npm install turkiye-identity-verification
 
 ## Example
 
+<u>If you use `require` for importing :<u>
+
 ```js
 const { nativeCitizenVerify, foreignCitizenVerify } = require('turkiye-identity-verification');
 
 // If want native citizen verify
 const verifyIdentityForNativeCitizen = async () => {
     try {
-        const result = await nativeCitizenVerify(16837259450, 'Hüseyin', 'Karaoğlan', 2000);
+        const result = await nativeCitizenVerify(11111111111, 'Hüseyin', 'Karaoğlan', 2000);
         console.log(result);
     } catch (error) {
         console.error(error);
@@ -38,10 +40,26 @@ verifyIdentityForNativeCitizen();
 // If want foreign citizen verify
 const verifyIdentityForForeignCitizen = async () => {
     try {
-        const result = await foreignCitizenVerify(99168372594, 'Hüseyin', 'Karaoğlan', 1, 1, 2000);
+        const result = await foreignCitizenVerify(99111111111, 'Hüseyin', 'Karaoğlan', 1, 1, 2000);
         console.log(result);
     } catch (error) {
         console.error(error);
     }
 };
 verifyIdentityForForeignCitizen();
+```
+
+<u>If you use `import` for importing :<u>
+
+```js
+import { nativeCitizenVerify, foreignCitizenVerify } from 'turkiye-identity-verification';
+
+// If want native citizen verify
+const nativeCitizenVerifyResult = await nativeCitizenVerify(11111111111, 'Hüseyin', 'Karaoğlan', 2000);
+console.log(nativeCitizenVerifyResult)
+
+
+// If want foreign citizen verify
+const foreignCitizenVerifyResult = await foreignCitizenVerify(99111111111, 'Hüseyin', 'Karaoğlan', 1, 1, 2000);
+console.log(foreignCitizenVerifyResult);
+```

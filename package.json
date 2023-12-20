@@ -1,6 +1,6 @@
 {
   "name": "turkiye-identity-verification",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Using the Nüfus ve Vatandaşlık İşleri (NVİ), it verifies the information on the Turkish Identity Card.",
   "main": "index.js",
   "scripts": {
